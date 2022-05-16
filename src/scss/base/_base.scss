@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: var(--font-motserrat);
+    font-size: var(--size-normal);
+    line-height: 1.2;
+    color: var(--color-black);
+    font-weight: var(--font-regular);
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.modal-open {
+    overflow: hidden;
+    background-color: var(--color-dark-gray);
+}
+
+.container {
+    max-width: 1700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.title {
+    margin: 0;
+    font-size: var(--size-subtitle);
+    font-weight: var(--font-extraBold);
+
+}

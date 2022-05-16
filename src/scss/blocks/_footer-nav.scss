@@ -1,0 +1,27 @@
+.footer-nav {
+}
+.footer__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: var(--font-semiBold);
+    padding-bottom: 44px;
+}
+.footer__nav {
+    display: grid;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-nav__item {
+}
+.footer-nav__link {
+    text-decoration: none;
+    font-size: var(--size-normal-big);
+    color: var(--color-gray);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+        color: var(--color-yellow)
+    }
+}

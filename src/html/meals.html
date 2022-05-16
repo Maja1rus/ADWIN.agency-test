@@ -1,0 +1,25 @@
+<section class="meals container">
+    <h2 class="title">Последние рецепты</h2>
+    <div class="meals__cards">
+        @@include("meals-item.html", {
+            "img": "meals_01.jpg",
+            "title": "Просто оливьешка как в детстве",
+            "before": ''
+        })
+        @@include("meals-item.html", {
+            "img": "meals_02.jpg",
+            "title": "Кусок мяса прокопчённый в пылу дедлайна",
+            "before": ''
+        })
+        @@include("meals-item.html", {
+            "img": "meals_03.jpg",
+            "title": "Сердечко дизайнера разбитое правками",
+            "before": 'meals__tag'
+        })
+        @@include("meals-item.html", {
+            "img": "meals_04.jpg",
+            "title": "Макарошки в модном соусе по рецепту из Тик Тока",
+            "before": ''
+        })
+    </div>
+</section>
