@@ -33,7 +33,7 @@ footer {
 
 .modal-open {
     overflow: hidden;
-    background-color: var(--color-dark-gray);
+    background-color: var(--color-gray);
 }
 
 .container {
@@ -61,4 +61,15 @@ img {
     font-size: var(--size-subtitle);
     font-weight: var(--font-extraBold);
 
+}
+
+@media screen and(min-width:769px) {
+    .modal-open {
+        overflow: auto;
+        background-color: transparent;
+    }
+
+    body {
+        margin-right: 0;
+    }
 }

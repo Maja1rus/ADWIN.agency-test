@@ -7,11 +7,9 @@ export function headerMenu(className) {
 
 
     function menuHandler() {
-        if (!menuNav.classList.contains('header__right--active')) {
+        if (!menuNav.classList.contains('active')) {
             menuActive();
             disableScroll();
-            menuLink();
-            
             window.addEventListener('keydown', escapeHandler);
         } else {
             menuClose();
@@ -19,24 +17,14 @@ export function headerMenu(className) {
         }
     }
 
-    function menuLink() {
-        const links = menuNav.querySelectorAll('.js-link');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                menuClose();
-                enableScroll();
-            })
-        });
-    }
-
     function menuActive() {
-        btnIcon.classList.add('btn-nav__icon--active');
-        menuNav.classList.add('header__right--active');   
+        btnIcon.classList.add('active');
+        menuNav.classList.add('active');   
     }
 
     function menuClose() {
-        btnIcon.classList.remove('btn-nav__icon--active');
-        menuNav.classList.remove('header__right--active');
+        btnIcon.classList.remove('active');
+        menuNav.classList.remove('active');
     }
 
     function disableScroll() {

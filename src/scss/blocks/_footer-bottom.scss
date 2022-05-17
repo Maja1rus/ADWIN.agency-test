@@ -19,11 +19,14 @@
     }
 }
 
+
+
 .footer__count {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
+
     span {
         font-size: 3.25rem;
         font-weight: var(--font-extraBold);

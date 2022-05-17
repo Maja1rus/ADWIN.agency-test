@@ -12,21 +12,45 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 60px;
 }
+
 .meals__item {
     display: grid;
     gap: 15px;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        .meals__img {
+
+            img {
+                opacity: 0.8;
+            }
+        }
+    }
 }
+
 .meals__img {
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 305px;
+        border-radius: 10px;
+        transition: opacity 0.2s ease-in-out;
+    }
 }
+
 .meals__title {
     padding-top: 2px;
     font-size: var(--size-normal-big);
     font-weight: var(--font-medium);
 }
+
 .meals__info {
     display: flex;
     align-items: center;
     gap: 20px;
+
     span {
         display: flex;
         align-items: center;
@@ -37,23 +61,24 @@
         white-space: nowrap;
     }
 }
-.meals__ingredients {
-}
-.meals__time {
-}
-.meals__bookmark {
-}
+
+.meals__ingredients {}
+
+.meals__time {}
+
+.meals__bookmark {}
 
 @media screen and(min-width:769px) {
     .meals {
         padding-top: 70px;
         padding-bottom: 100px;
     }
-    .meals__title { 
+
+    .meals__title {
         font-size: var(--size-subtitle-small);
     }
 
-    .meals__info { 
+    .meals__info {
         gap: 30px;
     }
 }
